@@ -24,8 +24,8 @@
 # Copyright 2014 Steve Crockett.
 #
 class lamp {
-	class { 'apt::update' :
-		before => [ Class[apache], Class[php], Class[mysql] ]
+	class { 'apt' :
+		before => [ Class['apache'], Class['php'], Class['mysql::server'] ]
 	}
 
 	/*
