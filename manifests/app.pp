@@ -22,7 +22,7 @@
 #
 # Copyright 2014 Steve Crockett.
 #
-class lamp::app	( 
+define lamp::app	( 
 	$appname,
 	$dbname		=>	$appname,
 	$dbuser		=>	$appname,
