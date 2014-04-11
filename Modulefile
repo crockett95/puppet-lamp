@@ -1,0 +1,15 @@
+name    'crockett95-lamp'
+version '0.1.0'
+source 'git@github.com:crockett95/puppet-lamp.git'
+author 'crockett95'
+license 'Apache License, Version 2.0'
+summary 'Ubuntu / Debian LAMP development stack provisioner'
+description 'Provisions a simple server stack for Apache, MySQL and PHP on Ubuntu. Designed to be run with Vagrant'
+project_page 'https://github.com/crockett95/puppet-lamp'
+
+## Add dependencies, if any:
+dependency 'puppetlabs/stdlib', '>= 4.1.0'
+dependency 'puppetlabs/apt', '>= 1.4.0'
+dependency 'puppetlabs/apache', '>= 1.0.0'
+dependency 'puppetlabs/php', '>= 2.0.0'
+dependency 'puppetlabs/mysql', '>= 4.1.0'
